@@ -1,0 +1,150 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- Page Title -->
+        <h1 id="title">Survey Form</h1>
+
+        <!-- Description -->
+        <p id="description">We would love to hear your feedback. Please fill out the form below.</p> 
+
+        <!-- Form -->
+        <form id="survey-form">
+            <!-- Name Input -->
+            <label id="name-label" for="name">Name:</label> 
+            <input id="name" type="text" placeholder="Enter your name" required> 
+            <!-- Email Input -->
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email" required> 
+
+            <!-- Number Input -->
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" placeholder="Enter your age" min="18" max="99" required> 
+
+            <!-- Dropdown -->
+            <label for="dropdown">How did you find us?</label>
+            <select id="dropdown">
+                <option value="friend">A friend</option> 
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>How satisfied are you with our service?</legend>
+                <label><input type="radio" name="satisfaction" value="very-satisfied" required> Very Satisfied</label>
+                <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
+                <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
+                <label><input type="radio" name="satisfaction" value="unsatisfied"> Unsatisfied</label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>What features do you like the most?</legend>
+                <label><input type="checkbox" value="design"> Design</label>
+                <label><input type="checkbox" value="usability"> Usability</label>
+                <label><input type="checkbox" value="content"> Content</label>
+            </fieldset>
+
+            <!-- Textarea -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" placeholder="Your comments..."></textarea> 
+            
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button> 
+        </form>
+    </main>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, gray, white);
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, p {
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: 20px; 
+  height: 20px; 
+  margin: 0; 
+  
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    width: 96%;
+}
+select,button {    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    width: 99.5%;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional Styles */
+fieldset {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+  gap: 16px;
+    border: none;
+    padding: 15px;
+}
+
+
+** end of undefined **
+

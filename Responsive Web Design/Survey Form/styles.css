@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, gray, white);
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, p {
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: 20px; 
+  height: 20px; 
+  margin: 0; 
+  
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    width: 96%;
+}
+select,button {    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    width: 99.5%;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional Styles */
+fieldset {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+  gap: 16px;
+    border: none;
+    padding: 15px;
+}
